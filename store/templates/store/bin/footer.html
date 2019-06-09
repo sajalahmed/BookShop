@@ -1,0 +1,41 @@
+{% load staticfiles %}
+<div class="footer">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-6 col-md-4 col-xs-12 footer_menu">
+				<h3>Contact</h3>
+				<ul>
+					<li class="footer_contact">
+						<i class="fa fa-phone"></i>
+						<p>  0261 657 6 657 </p>
+					</li>
+					<li class="footer_contact">
+						<i class="fa fa-envelope"></i>
+						<p> test@gmail.com </p>
+					</li>
+					<li class="footer_contact">
+						<i class="fa fa-map-marker"></i>
+						<p>Uttar,Dhaka</p>
+					</li>
+				</ul>
+			</div>
+		 
+			 <div class="col-sm-6 col-md-4 col-xs-12 footer_menu">
+				<h3>Menu</h3>
+				<ul>
+					<li class="footer_menu">
+						<a href="{% url 'store:books' %}"><i class="fa fa-angle-right"></i>Books</a>
+					</li>					
+				</ul>
+			</div>
+			
+			<div class="col-sm-6 col-md-4 col-xs-12 footer_news">
+				<h3>We accept payment via</h3>
+				<div class="footer_paymentmethod">
+					<img src="{% static 'images/bkash.png' %}" alt="" />
+					<img src="{% static 'images/rocket.png' %}" alt="" />
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
