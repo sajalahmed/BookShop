@@ -1,12 +1,10 @@
 # Online BookStore
+<h1> Installation </h1>
 <ul>
-    <li>Django </li>
-        <ul>
-            <li>django-crispy-forms</li>
-            <li>xhtml2pdf</li>
-        <ul>
-         <li> </li>
-           
+    <li>pip install djangorestframework</li>
+    <li>pip install django-cors-headers</li>
+    <li>pip install --upgrade django-crispy-forms</li>
+    <li>pip install xhtml2pdf</li>
 </ul>
 <div style="margin-top: 20px">
     
