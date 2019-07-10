@@ -1,5 +1,5 @@
 # Online BookStore
-<h4> Installation </h4>
+<h3> Installation </h3>
 </br>
 <ul>
     <li>pip install djangorestframework</li>
@@ -9,6 +9,8 @@
 </ul>
 </br>
 
+</br>
+<h3>Screenshot </h3>
 <div style="margin-top: 20px">
     
 ![screenshot_2019-02-18 online book store 2](https://user-images.githubusercontent.com/28836413/52928808-cddf6e00-336b-11e9-9db9-58cb0fc0f0e5.png)    
