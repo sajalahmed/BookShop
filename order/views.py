@@ -6,7 +6,7 @@ from django.core.paginator import EmptyPage, PageNotAnInteger, Paginator
 from cart.cart import Cart
 from .models import Order, OrderItem
 from .forms import OrderCreateForm
-#from .pdfcreator import renderPdf
+from .pdfcreator import renderPdf
 
 def order_create(request):
 	cart = Cart(request)
@@ -29,7 +29,6 @@ def order_create(request):
 						quantity=item['quantity']
 						)
 				cart.clear()
-
 				return render(request, 'order/successfull.html', {'order': order})
 
 			else:
@@ -63,7 +62,6 @@ def order_details(request, id):
 	}
 	return render(request, 'order/details.html', context)
 
-"""
 class pdf(View):
     def get(self, request, id):
         try:
@@ -73,6 +71,5 @@ class pdf(View):
         context={
             "order":query
         }
-        article_pdf=renderPdf('order/pdf.html',context)
+        article_pdf = renderPdf('order/pdf.html',context)
         return HttpResponse(article_pdf,content_type='application/pdf')
-"""
