@@ -2,9 +2,8 @@
 
 
 ```
-    pip install djangorestframework
     pip install django-cors-headers
-    pip install --upgrade django-crispy-forms
+    pip install django-crispy-forms
     pip install xhtml2pdf
 ```
 
